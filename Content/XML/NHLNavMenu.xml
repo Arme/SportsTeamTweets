@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<nodes>
+  <node title="Western">
+    <link title="CHI" href="Chicago Blackhawks"></link>
+    <link title="CBJ" href="Columbus Blue Jackets"></link>
+    <link title="DET" href="Detroit Red Wings"></link>
+    <link title="NSH" href="Nashville Predators"></link>
+    <link title="STL" href="St Louis Blues"></link>
+
+    <link title="CGY" href="Calgary Flames"></link>
+    <link title="COL" href="Colorado Avalanche"></link>
+    <link title="EDM" href="Edmonton Oilers"></link>
+    <link title="MIN" href="Minnesota Wild"></link>
+    <link title="VAN" href="Vancouver Canucks"></link>
+
+    <link title="ANA" href="Anaheim Ducks"></link>
+    <link title="DAL" href="Dallas Stars"></link>
+    <link title="LAK" href="Los Angeles Kings"></link>
+    <link title="PHX" href="Phoenix Coyotes"></link>
+    <link title="SJS" href="San Jose Sharks"></link>
+  </node>
+  <node title="Eastern">
+    <link title="NJD" href="New Jersey Devils"></link>
+    <link title="NYI" href="New York Islanders"></link>
+    <link title="NYR" href="New York Rangers"></link>
+    <link title="PHI" href="Philadelphia Flyers"></link>
+    <link title="PIT" href="Pittsburg Penquins"></link>
+
+    <link title="BOS" href="Boston Bruins"></link>
+    <link title="BUF" href="Buffalo Sabres"></link>
+    <link title="MTL" href="Montreal Canadiens"></link>
+    <link title="OTT" href="Ottawa Senators"></link>
+    <link title="TOR" href="Toronto Maple Leafs"></link>
+
+    <link title="CAR" href="Carolina Hurricanes"></link>
+    <link title="FLA" href="Florida Panthers"></link>
+    <link title="TBL" href="Tampa Bay Lightning"></link>
+    <link title="WSH" href="Washington Capitals"></link>
+    <link title="WPG" href="Winnipeg Jets"></link>
+  </node>
+</nodes>

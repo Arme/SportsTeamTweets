@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/CSS/STTBootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/CSS/STT.css")" rel="stylesheet" type="text/css" />
+</head>
+<body class="custom-background">
+    @Html.Partial("~/Views/Nav/Menu.cshtml")
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+                @Html.Partial("~/Views/NHL/LeftNavigation.cshtml")
+            </div>
+            <div class="span6">
+                @RenderBody()
+            </div>
+            <div class="span3">
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.js")" type="text/javascript"></script>
+
+</body>
+</html>

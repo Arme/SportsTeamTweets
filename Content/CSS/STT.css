@@ -1,0 +1,31 @@
+﻿@media (max-width: 979px) 
+{
+    .dropdown-submenu .dropdown-menu
+    {
+        display: none;
+    }
+}
+
+.custom-background
+{
+    background: url("../Images/carbon_fibre_big.png");
+    background-repeat: repeat;
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+.navbar-inner .btn-navbar,
+.navbar-inner .btn-navbar:hover,
+.navbar-inner .btn-navbar:focus,
+.navbar-inner .btn-navbar:active,
+.navbar-inner .btn-navbar.active,
+.navbar-inner .btn-navbar.disabled,
+.navbar-inner .btn-navbar[disabled]
+{
+    background: rgb(82, 82, 82);
+}
+
+iframe[id^='twitter-widget-']
+{
+    width: 100%;
+}

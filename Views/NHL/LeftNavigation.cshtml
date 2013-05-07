@@ -1,0 +1,14 @@
+﻿@{
+    string controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string action = ViewContext.RouteData.Values["Action"].ToString();
+    string allLink = "/" + controller + "/" + action + "/All";
+    string playersLink = "/" + controller + "/" + action + "/Players";
+    string mediaLink = "/" + controller + "/" + action + "/Media";
+}
+<div class="well sidebar-nav affix">
+    <ul class="nav nav-list">
+        <li><a href="@allLink">All</a></li>
+        <li><a href="@playersLink">Players</a></li>
+        <li><a href="@mediaLink">Media</a></li>
+    </ul>
+</div>
