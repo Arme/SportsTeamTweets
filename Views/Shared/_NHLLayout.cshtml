@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
-    <link href="@Url.Content("~/Content/CSS/STTBootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/CSS/bootstrap.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/CSS/STT.css")" rel="stylesheet" type="text/css" />
 </head>
 <body class="custom-background">
     @Html.Partial("~/Views/Nav/Menu.cshtml")
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="span3">
-                @Html.Partial("~/Views/NHL/LeftNavigation.cshtml")
+            <div class="span2">
             </div>
-            <div class="span6">
+            <div class="span8">
                 @RenderBody()
             </div>
-            <div class="span3">
+            <div class="span2">
             </div>
         </div>
     </div>
