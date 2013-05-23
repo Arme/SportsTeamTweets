@@ -72,6 +72,7 @@ iframe[id^='twitter-widget-']
 {
     background-color: #fff;
     margin: 0;
+    padding: 0;
     border: none;
     border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
@@ -84,6 +85,11 @@ iframe[id^='twitter-widget-']
 {
     background-color: #fff;
     color: rgb(82,82,82);
+}
+
+.dropdown-menu .divider.divider-no-upper
+{
+    margin: 0;
 }
 
 .logo-nhl

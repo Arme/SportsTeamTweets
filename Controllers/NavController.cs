@@ -9,14 +9,19 @@ namespace SportsTeamTweets.Controllers
 {
     public class NavController : Controller
     {
-        public ViewResult Menu()
+        public ViewResult HomeMenu()
         {
             return View();
         }
 
-        public PartialViewResult SubMenu(string conference)
+        public ViewResult NHLMenu()
         {
-            return PartialView("~/Views/Nav/SubMenu.cshtml",
+            return View();
+        }
+
+        public PartialViewResult NHLSubMenu(string conference)
+        {
+            return PartialView("~/Views/Nav/NHLSubMenu.cshtml",
                 SubMenuNavManager.Load(conference));
         }
 
