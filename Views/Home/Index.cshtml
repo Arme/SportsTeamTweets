@@ -1,23 +1,44 @@
-﻿@{
+﻿@model List<string>
+@{
     ViewBag.Title = "Index";
 }
-<div style="height: 150px;"></div>
-<h2>Tweets across the leagues</h2>
 <div class="row-fluid">
-    <div class="span3 well">
-        <img src="~/Content/Images/NHL/small/nhlglyph.png" alt="NHL" class="pull-left brand-icon" />
-        <h2>NHL</h2>
+    <h2>Tweets across the leagues</h2>
+</div>
+<div class="row-fluid">
+    <div class="span3 well preview-well">
+        <a class="btn btn-xlarge btn-block btn-primary" href="/NHL">
+            <i class="icon-chevron-sign-right icon-white icon-large pull-right"></i>
+            <img src="~/Content/Images/NHL/nhlglyph.png" alt="NHL" class="brand-icon" />
+            NHL
+        </a>
+        <a class="twitter-timeline"  href="https://twitter.com/SportsTeamTweet/nhl"  data-widget-id="@Model[0]">Tweets from @@SportsTeamTweet/nhl</a>
     </div>
-    <div class="span3 well">
-        <img src="~/Content/Images/NHL/small/nhlglyph.png" alt="NHL" class="pull-left brand-icon" />
-        <h2>NFL</h2>
+    <div class="span3 well preview-well">
+        <a class="btn btn-xlarge btn-block btn-success" href="/NFL">
+            <i class="icon-chevron-sign-right icon-white icon-large pull-right"></i>
+            <img src="~/Content/Images/NFL/nflglyph.png" alt="NFL" class="brand-icon" />
+            NFL
+        </a>
+        <a class="twitter-timeline"  href="https://twitter.com/SportsTeamTweet/nfl"  data-widget-id="@Model[1]">Tweets from @@SportsTeamTweet/nfl</a>
     </div>
-    <div class="span3 well">
-        <img src="~/Content/Images/NHL/small/nhlglyph.png" alt="NHL" class="pull-left brand-icon" />
-        <h2>NBA</h2>
+    <div class="span3 well preview-well">
+        <a class="btn btn-xlarge btn-block btn-warning" href="/NBA">
+            <i class="icon-chevron-sign-right icon-white icon-large pull-right"></i>
+            <img src="~/Content/Images/NBA/nbaglyph.png" alt="NBA" class="brand-icon" />
+            NBA
+        </a>
+        <a class="twitter-timeline"  href="https://twitter.com/SportsTeamTweet/nba"  data-widget-id="@Model[2]">Tweets from @@SportsTeamTweet/nba</a>
     </div>
-    <div class="span3 well">
-        <img src="~/Content/Images/NHL/small/nhlglyph.png" alt="NHL" class="pull-left brand-icon" />
-        <h2>MLB</h2>
+    <div class="span3 well preview-well">
+        <a class="btn btn-xlarge btn-block btn-danger" href="/MLB">
+            <i class="icon-chevron-sign-right icon-white icon-large pull-right"></i>
+            <img src="~/Content/Images/MLB/mlbglyph.png" alt="MLB" class="brand-icon" />
+            MLB
+        </a>
+        <a class="twitter-timeline"  href="https://twitter.com/SportsTeamTweet/mlb"  data-widget-id="@Model[3]">Tweets from @@SportsTeamTweet/mlb</a>
     </div>
 </div>
+
+<!--Scripts-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

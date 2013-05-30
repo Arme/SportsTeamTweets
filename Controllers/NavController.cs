@@ -19,11 +19,19 @@ namespace SportsTeamTweets.Controllers
             return View();
         }
 
+        public PartialViewResult HomeSubMenu(string league)
+        {
+            string viewLoc = "~/Views/Nav/" + league + "SubMenu.cshtml";
+            return PartialView(viewLoc,
+                SubMenuNavManager.LeagueLoad(league));
+        }
+
         public PartialViewResult NHLSubMenu(string conference)
         {
             return PartialView("~/Views/Nav/NHLSubMenu.cshtml",
-                SubMenuNavManager.Load(conference));
+                SubMenuNavManager.Load("NHL", conference));
         }
+
 
     }
 }

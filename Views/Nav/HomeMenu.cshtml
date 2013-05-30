@@ -13,20 +13,32 @@
         </a>
         <div class="nav-collapse collapse">
             <ul class="nav">
-                <li>
+                <li class="dropdown">
                     <a href="/NHL" class="dropdown-toggle nav-option" data-toggle="dropdown">
                         NHL
+                        <i class="icon-angle-down"></i>
                     </a>
-                    <a href="/NHL" class="dropdown-toggle nav-option" data-toggle="dropdown">
+                    <ul class="dropdown-menu">
+                        @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "NHL" }); }
+                    </ul>
+                </li>
+                <li>
+                    <a href="/NHL">
                         NFL
                     </a>
-                    <a href="/NHL" class="dropdown-toggle nav-option" data-toggle="dropdown">
+                </li>
+                <li>
+                    <a href="/NHL">
                         NBA
                     </a>
-                    <a href="/NHL" class="dropdown-toggle nav-option" data-toggle="dropdown">
+                </li>
+                <li>
+                    <a href="/NHL">
                         MLB
                     </a>
-                    <a href="/NHL" class="dropdown-toggle nav-option" data-toggle="dropdown">
+                </li>
+                <li>
+                    <a href="/NHL">
                         College Football
                     </a>
                 </li>
