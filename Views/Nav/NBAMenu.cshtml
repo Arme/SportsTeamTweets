@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "NHLMenu";
+    ViewBag.Title = "NBAMenu";
 }
 <div class="navbar">
     <div class="navbar-inner">
@@ -8,8 +8,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </a>
-        <a href="/NHL">
-            <img src="~/Content/Images/NHL/nhlglyph.png" alt="STT" class="pull-left brand-icon"/>
+        <a href="/">
+            <img src="~/Content/Images/NBA/nbaglyph.png" alt="STT" class="pull-left brand-icon"/>
             <div class="brand">SportsTeamTweets</div>
         </a>
         <div class="nav-collapse collapse">
@@ -20,7 +20,7 @@
                         <i class="icon-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        @{ Html.RenderAction("NHLSubMenu", "Nav",
+                        @{ Html.RenderAction("NBASubMenu", "Nav",
                                new { conference = "Western" }); }
                     </ul>
                 </li>
@@ -30,7 +30,7 @@
                         <i class="icon-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        @{ Html.RenderAction("NHLSubMenu", "Nav",
+                        @{ Html.RenderAction("NBASubMenu", "Nav",
                                new { conference = "Eastern" }); }
                     </ul>
                 </li>

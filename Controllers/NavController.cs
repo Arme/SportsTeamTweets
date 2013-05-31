@@ -32,6 +32,23 @@ namespace SportsTeamTweets.Controllers
                 SubMenuNavManager.Load("NHL", conference));
         }
 
+        public PartialViewResult NFLSubMenu(string conference)
+        {
+            return PartialView("~/Views/Nav/NFLSubMenu.cshtml",
+                SubMenuNavManager.Load("NFL", conference));
+        }
+
+        public PartialViewResult NBASubMenu(string conference)
+        {
+            return PartialView("~/Views/Nav/NBASubMenu.cshtml",
+                SubMenuNavManager.Load("NBA", conference));
+        }
+
+        public PartialViewResult MLBSubMenu(string conference)
+        {
+            return PartialView("~/Views/Nav/MLBSubMenu.cshtml",
+                SubMenuNavManager.Load("MLB", conference));
+        }
 
     }
 }

@@ -7,11 +7,11 @@ using System.Xml.Linq;
 
 namespace SportsTeamTweets.Controllers
 {
-    public class NHLController : Controller
+    public class NFLController : Controller
     {
         public ActionResult Index()
         {
-            return View(model: GetWidgetId("NHL"));
+            return View(model: GetWidgetId("NFL"));
         }
 
         //Western Conference

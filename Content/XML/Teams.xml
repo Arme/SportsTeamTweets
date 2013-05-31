@@ -7,13 +7,11 @@
       <link title="DET" href="Detroit Red Wings"></link>
       <link title="NSH" href="Nashville Predators"></link>
       <link title="STL" href="St Louis Blues"></link>
-
       <link title="CGY" href="Calgary Flames"></link>
       <link title="COL" href="Colorado Avalanche"></link>
       <link title="EDM" href="Edmonton Oilers"></link>
       <link title="MIN" href="Minnesota Wild"></link>
       <link title="VAN" href="Vancouver Canucks"></link>
-
       <link title="ANA" href="Anaheim Ducks"></link>
       <link title="DAL" href="Dallas Stars"></link>
       <link title="LAK" href="Los Angeles Kings"></link>
@@ -25,19 +23,127 @@
       <link title="NYI" href="New York Islanders"></link>
       <link title="NYR" href="New York Rangers"></link>
       <link title="PHI" href="Philadelphia Flyers"></link>
-      <link title="PIT" href="Pittsburg Penquins"></link>
-
+      <link title="PIT" href="Pittsburg Penguins"></link>
       <link title="BOS" href="Boston Bruins"></link>
       <link title="BUF" href="Buffalo Sabres"></link>
       <link title="MTL" href="Montreal Canadiens"></link>
       <link title="OTT" href="Ottawa Senators"></link>
       <link title="TOR" href="Toronto Maple Leafs"></link>
-
       <link title="CAR" href="Carolina Hurricanes"></link>
       <link title="FLA" href="Florida Panthers"></link>
       <link title="TBL" href="Tampa Bay Lightning"></link>
       <link title="WSH" href="Washington Capitals"></link>
       <link title="WPG" href="Winnipeg Jets"></link>
+    </conference>
+  </league>
+  <league title="NFL">
+    <conference title="AFC">
+      <link title="BUF" href="Buffalo Bills"></link>
+      <link title="MIA" href="Miami Dolphins"></link>
+      <link title="NEP" href="New England Patriots"></link>
+      <link title="NYJ" href="New York Jets"></link>
+      <link title="BAL" href="Baltimore Ravens"></link>
+      <link title="CIN" href="Cincinnati Bengals"></link>
+      <link title="CLE" href="Cleveland Browns"></link>
+      <link title="PIT" href="Pittsburg Steelers"></link>
+      <link title="HOU" href="Houston Texans"></link>
+      <link title="IND" href="Indianapolis Colts"></link>
+      <link title="JAC" href="Jacksonville Jaguars"></link>
+      <link title="TEN" href="Tennessee Titans"></link>
+      <link title="DEN" href="Denver Broncos"></link>
+      <link title="KCC" href="Kansas City Chiefs"></link>
+      <link title="OAK" href="Oakland Raiders"></link>
+      <link title="SDC" href="San Diego Chargers"></link>
+    </conference>
+    <conference title="NFC">
+      <link title="DAL" href="Dallas Cowboys"></link>
+      <link title="NYG" href="New York Giants"></link>
+      <link title="PHI" href="Philadelphia Eagles"></link>
+      <link title="WSH" href="Washington Redskins"></link>
+      <link title="CHI" href="Chicago Bears"></link>
+      <link title="DET" href="Detroit Lions"></link>
+      <link title="GBP" href="Green Bay Packers"></link>
+      <link title="MIN" href="Minnesota Vikings"></link>
+      <link title="ATL" href="Atlanta Falcons"></link>
+      <link title="CAR" href="Carolina Panthers"></link>
+      <link title="NOS" href="New Orleans Saints"></link>
+      <link title="TBB" href="Tampa Bay Buccaneers"></link>
+      <link title="ARI" href="Arizona Cardinals"></link>
+      <link title="STL" href="St Louis Rams"></link>
+      <link title="SFF" href="San Francisco 49ers"></link>
+      <link title="SEA" href="Seattle Seahawks"></link>
+    </conference>
+  </league>
+  <league title="NBA">
+    <conference title="Western">
+      <link title="DAL" href="Dallas Mavericks"></link>
+      <link title="HOU" href="Houston Rockets"></link>
+      <link title="MEM" href="Memphis Grizzlies"></link>
+      <link title="NOP" href="New Orleans Pelicans"></link>
+      <link title="SAS" href="San Antonio Spurs"></link>
+      <link title="DEN" href="Denver Nuggets"></link>
+      <link title="MIN" href="Minnesota Timberwolves"></link>
+      <link title="POR" href="Portland Trail Blazers"></link>
+      <link title="OKC" href="Oklahoma City Thunder"></link>
+      <link title="UTA" href="Utah Jazz"></link>
+      <link title="GSW" href="Golden State Warriors"></link>
+      <link title="LAC" href="Los Angeles Clippers"></link>
+      <link title="LAL" href="Los Angeles Lakers"></link>
+      <link title="PHX" href="Phoenix Suns"></link>
+      <link title="SAC" href="Sacramento Kings"></link>
+    </conference>
+    <conference title="Eastern">
+      <link title="BOS" href="Boston Celtics"></link>
+      <link title="BKN" href="Brooklyn Nets"></link>
+      <link title="NYN" href="New York Knicks"></link>
+      <link title="PHI" href="Philadelphia 76ers"></link>
+      <link title="TOR" href="Toronto Raptors"></link>
+      <link title="CHI" href="Chicago Bulls"></link>
+      <link title="CLE" href="Cleveland Cavaliers"></link>
+      <link title="DET" href="Detroit Pistons"></link>
+      <link title="IND" href="Indiana Pacers"></link>
+      <link title="MIL" href="Milwaukee Bucks"></link>
+      <link title="ATL" href="Atlanta Hawks"></link>
+      <link title="CHA" href="Charlotte Bobcats"></link>
+      <link title="MIA" href="Miami Heat"></link>
+      <link title="ORL" href="Orlando Magic"></link>
+      <link title="WSH" href="Washington Wizards"></link>
+    </conference>
+  </league>
+  <league title="MLB">
+    <conference title="American">
+      <link title="BAL" href="Baltimore Orioles"></link>
+      <link title="BOS" href="Boston Red Sox"></link>
+      <link title="NYY" href="New York Yankees"></link>
+      <link title="TBR" href="Tampa Bay Rays"></link>
+      <link title="TOR" href="Toronto Blue Jays"></link>
+      <link title="CHW" href="Chicago White Sox"></link>
+      <link title="CLE" href="Cleveland Indians"></link>
+      <link title="DET" href="Detroit Tigers"></link>
+      <link title="KCR" href="Kansas City Royals"></link>
+      <link title="MIN" href="Minnesota Twins"></link>
+      <link title="HOU" href="Houston Astros"></link>
+      <link title="LAA" href="Los Angeles Angels"></link>
+      <link title="OAK" href="Oakland Athletics"></link>
+      <link title="SEA" href="Seattle Mariners"></link>
+      <link title="TEX" href="Texas Rangers"></link>
+    </conference>
+    <conference title="National">
+      <link title="ATL" href="Atlanta Braves"></link>
+      <link title="MIA" href="Miami Marlins"></link>
+      <link title="NYM" href="New York Mets"></link>
+      <link title="PHI" href="Philadelphia Phillies"></link>
+      <link title="WSH" href="Washington Nationals"></link>
+      <link title="CHC" href="Chicago Cubs"></link>
+      <link title="CIN" href="Cincinnati Reds"></link>
+      <link title="MIL" href="Milwaukee Brewers"></link>
+      <link title="PIT" href="Pittsburgh Pirates"></link>
+      <link title="STL" href="St Louis Cardinals"></link>
+      <link title="ARI" href="Arizona Diamondbacks"></link>
+      <link title="COL" href="Colorado Rockies"></link>
+      <link title="LAD" href="Los Angeles Dodgers"></link>
+      <link title="SDP" href="San Diego Padres"></link>
+      <link title="SFG" href="San Francisco Giants"></link>
     </conference>
   </league>
 </leagues>

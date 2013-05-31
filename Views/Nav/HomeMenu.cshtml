@@ -14,7 +14,7 @@
         <div class="nav-collapse collapse">
             <ul class="nav">
                 <li class="dropdown">
-                    <a href="/NHL" class="dropdown-toggle nav-option" data-toggle="dropdown">
+                    <a href="" class="dropdown-toggle nav-option" data-toggle="dropdown">
                         NHL
                         <i class="icon-angle-down"></i>
                     </a>
@@ -22,23 +22,35 @@
                         @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "NHL" }); }
                     </ul>
                 </li>
-                <li>
-                    <a href="/NHL">
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle nav-option" data-toggle="dropdown">
                         NFL
+                        <i class="icon-angle-down"></i>
                     </a>
+                    <ul class="dropdown-menu">
+                        @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "NFL" }); }
+                    </ul>
                 </li>
-                <li>
-                    <a href="/NHL">
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle nav-option" data-toggle="dropdown">
                         NBA
+                        <i class="icon-angle-down"></i>
                     </a>
+                    <ul class="dropdown-menu">
+                        @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "NBA" }); }
+                    </ul>
                 </li>
-                <li>
-                    <a href="/NHL">
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle nav-option" data-toggle="dropdown">
                         MLB
+                        <i class="icon-angle-down"></i>
                     </a>
+                    <ul class="dropdown-menu">
+                        @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "MLB" }); }
+                    </ul>
                 </li>
-                <li>
-                    <a href="/NHL">
+                <li class="dropdown">
+                    <a href="">
                         College Football
                     </a>
                 </li>
