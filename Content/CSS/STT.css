@@ -46,6 +46,16 @@
     background-attachment: fixed;
 }
 
+.navbar-bottom
+{
+    margin-bottom: 0px !important;
+}
+
+.navbar-inner
+{
+    border: none;
+}
+
 .navbar-inner .btn-navbar,
 .navbar-inner .btn-navbar:hover,
 .navbar-inner .btn-navbar:focus,
@@ -68,6 +78,16 @@ iframe[id^='twitter-widget-']
     width: 100%;
 }
 
+.navbar .nav > li
+{
+    line-height: 31px;
+}
+
+.navbar .nav > li > a 
+{
+    padding: 11px 15px;
+}
+
 .navbar .nav > li > .dropdown-menu:after
 {
     border-left: none;
@@ -80,6 +100,11 @@ iframe[id^='twitter-widget-']
     border-left: none;
     border-right: none;
     border-bottom: none;
+}
+
+.navbar .nav > li.dropdown.open > a > i
+{
+
 }
 
 .dropdown-menu

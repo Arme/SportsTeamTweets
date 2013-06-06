@@ -12,9 +12,10 @@
             <div class="brand">SportsTeamTweets</div>
         </a>
         <div class="nav-collapse collapse">
-            <ul class="nav">
-                <li class="dropdown">
+            <ul class="nav pull-right">
+                <li id="NHLdd" class="dropdown">
                     <a href="" class="dropdown-toggle nav-option" data-toggle="dropdown">
+                        <img id="NHLglyph" src="~/Content/Images/NHL/nhlglyph.png" alt="NHL" />
                         NHL
                         <i class="icon-angle-down"></i>
                     </a>
@@ -22,8 +23,9 @@
                         @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "NHL" }); }
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li id="NFLdd" class="dropdown">
                     <a href="" class="dropdown-toggle nav-option" data-toggle="dropdown">
+                        <img id="NFLglyph" src="~/Content/Images/NFL/nflglyph.png" alt="NFL" />
                         NFL
                         <i class="icon-angle-down"></i>
                     </a>
@@ -31,8 +33,9 @@
                         @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "NFL" }); }
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li id="NBAdd" class="dropdown">
                     <a href="" class="dropdown-toggle nav-option" data-toggle="dropdown">
+                        <img id="NBAglyph" src="~/Content/Images/NBA/nbaglyph.png" alt="NBA" />
                         NBA
                         <i class="icon-angle-down"></i>
                     </a>
@@ -40,8 +43,9 @@
                         @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "NBA" }); }
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li id="MLBdd" class="dropdown">
                     <a href="" class="dropdown-toggle nav-option" data-toggle="dropdown">
+                        <img id="MLBglyph"  src="~/Content/Images/MLB/mlbglyph.png" alt="MLB" />
                         MLB
                         <i class="icon-angle-down"></i>
                     </a>
@@ -49,12 +53,106 @@
                         @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "MLB" }); }
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="">
-                        College Football
-                    </a>
-                </li>
             </ul>
         </div>
     </div>
 </div>
+<!--Script-->
+<script type="text/javascript" src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('ul.nav li#NHLdd').data('open', false);
+        $('ul.nav li#NFLdd').data('open', false);
+        $('ul.nav li#NBAdd').data('open', false);
+        $('ul.nav li#MLBdd').data('open', false);
+
+        $('ul.nav li a').click(function () {
+            switch ($(this).parent().attr('id'))
+            {
+                case 'NHLdd':
+                    if ($('ul.nav li#NHLdd').data('open')) {
+                        $('ul.nav li#NHLdd').data('open', false);
+                        $('img#NHLglyph', this).attr('src', '/Content/Images/NHL/nhlglyph.png');
+                    } else {
+                        $('ul.nav li#NHLdd').data('open', true);
+                        $('ul.nav li#NFLdd').data('open', false);
+                        $('ul.nav li#NBAdd').data('open', false);
+                        $('ul.nav li#MLBdd').data('open', false);
+                        $('img#NHLglyph', this).attr('src', '/Content/Images/NHL/nhlglyph_gs.png');
+                        $('ul.nav li#NFLdd img#NFLglyph').attr('src', '/Content/Images/NFL/nflglyph.png');
+                        $('ul.nav li#NBAdd img#NBAglyph').attr('src', '/Content/Images/NBA/nbaglyph.png');
+                        $('ul.nav li#MLBdd img#MLBglyph').attr('src', '/Content/Images/MLB/mlbglyph.png');
+                    }
+                    break;
+                case 'NFLdd':
+                    if ($('ul.nav li#NFLdd').data('open')) {
+                        $('ul.nav li#NFLdd').data('open', false);
+                        $('img#NFLglyph', this).attr('src', '/Content/Images/NFL/nflglyph.png');
+                    } else {
+                        $('ul.nav li#NHLdd').data('open', false);
+                        $('ul.nav li#NFLdd').data('open', true);
+                        $('ul.nav li#NBAdd').data('open', false);
+                        $('ul.nav li#MLBdd').data('open', false);
+                        $('ul.nav li#NHLdd img#NHLglyph').attr('src', '/Content/Images/NHL/nhlglyph.png');
+                        $('img#NFLglyph', this).attr('src', '/Content/Images/NFL/nflglyph_gs.png');
+                        $('ul.nav li#NBAdd img#NBAglyph').attr('src', '/Content/Images/NBA/nbaglyph.png');
+                        $('ul.nav li#MLBdd img#MLBglyph').attr('src', '/Content/Images/MLB/mlbglyph.png');
+                    }
+                    break;
+                case 'NBAdd':
+                    if ($('ul.nav li#NBAdd').data('open')) {
+                        $('ul.nav li#NBAdd').data('open', false);
+                        $('img#NBAglyph', this).attr('src', '/Content/Images/NBA/nbaglyph.png');
+                    } else {
+                        $('ul.nav li#NHLdd').data('open', false);
+                        $('ul.nav li#NFLdd').data('open', false);
+                        $('ul.nav li#NBAdd').data('open', true);
+                        $('ul.nav li#MLBdd').data('open', false);
+                        $('ul.nav li#NHLdd img#NHLglyph').attr('src', '/Content/Images/NHL/nhlglyph.png');
+                        $('ul.nav li#NFLdd img#NFLglyph').attr('src', '/Content/Images/NFL/nflglyph.png');
+                        $('img#NBAglyph', this).attr('src', '/Content/Images/NBA/nbaglyph_gs.png');
+                        $('ul.nav li#MLBdd img#MLBglyph').attr('src', '/Content/Images/MLB/mlbglyph.png');
+                    }
+                    break;
+                case 'MLBdd':
+                    if ($('ul.nav li#MLBdd').data('open')) {
+                        $('ul.nav li#MLBdd').data('open', false);
+                        $('img#MLBglyph', this).attr('src', '/Content/Images/MLB/mlbglyph.png');
+                    } else {
+                        $('ul.nav li#NHLdd').data('open', false);
+                        $('ul.nav li#NFLdd').data('open', false);
+                        $('ul.nav li#NBAdd').data('open', false);
+                        $('ul.nav li#MLBdd').data('open', true);
+                        $('ul.nav li#NHLdd img#NHLglyph').attr('src', '/Content/Images/NHL/nhlglyph.png');
+                        $('ul.nav li#NFLdd img#NFLglyph').attr('src', '/Content/Images/NFL/nflglyph.png');
+                        $('ul.nav li#NBAdd img#NBAglyph').attr('src', '/Content/Images/NBA/nbaglyph.png');
+                        $('img#MLBglyph', this).attr('src', '/Content/Images/MLB/mlbglyph_gs.png');
+                    }
+                    break;
+            }
+        });
+
+
+
+
+        $(document).click(function () {
+            if ($('ul.nav li#NHLdd').data('open')) {
+                $('ul.nav li#NHLdd').data('open', false);
+                $('img#NHLglyph', this).attr('src', '/Content/Images/NHL/nhlglyph.png');
+            }
+            if ($('ul.nav li#NFLdd').data('open')) {
+                $('ul.nav li#NFLdd').data('open', false);
+                $('img#NFLglyph', this).attr('src', '/Content/Images/NFL/nflglyph.png');
+            }
+            if ($('ul.nav li#NBAdd').data('open')) {
+                $('ul.nav li#NBAdd').data('open', false);
+                $('img#NBAglyph', this).attr('src', '/Content/Images/NBA/nbaglyph.png');
+            }
+            if ($('ul.nav li#MLBdd').data('open')) {
+                $('ul.nav li#MLBdd').data('open', false);
+                $('img#MLBglyph', this).attr('src', '/Content/Images/MLB/mlbglyph.png');
+            }
+        });
+    });
+</script>
