@@ -12,18 +12,8 @@
     }
     var logoImg = "/Content/Images/MLB/" + link.Key + ".png";
     var linkref = "/MLB/" + link.Key;
-    var linkrefplayers = linkref + "/Players";
-    var linkrefmedia = linkref + "/Media";
     <li class="dropdown-submenu">
         <a href="@linkref"><img src="@logoImg" alt="@link.Key" />      @link.Value</a>
-        <ul class="dropdown-menu">
-            <li>
-                <a href="@linkrefplayers">Filter by Players</a>
-            </li>
-            <li>
-                <a href="@linkrefmedia">Filter by Media</a>
-            </li>
-        </ul>
     </li>
     idx++;
 }

@@ -1,6 +1,7 @@
 ﻿body 
 {
     font-family: 'Roboto', Helvetica, Arial;
+    font-size: 10px;
 }
 
 @media (max-width: 979px) 
@@ -19,7 +20,7 @@
 
 .btn-xlarge
 {
-    font-size: 22px;
+    font-size: 2.2em;
     line-height: normal;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -38,6 +39,12 @@
     margin-right: 10px;
 }
 
+[class^="icon-"].preview-tab-icon,
+[class*="icon-"].preview-tab-icon
+{
+    margin-top: .8em; margin-right: .3em;
+}
+
 .custom-background
 {
     background: url("../Images/carbon_fibre_big.png");
@@ -46,7 +53,8 @@
     background-attachment: fixed;
 }
 
-.navbar-bottom
+.navbar-bottom,
+.navbar-bottom > .navbar-inner
 {
     margin-bottom: 0px !important;
 }
@@ -67,9 +75,9 @@
     background: rgb(82, 82, 82);
 }
 
-.nav-option 
+.navbar .nav .nav-option 
 {
-    font-size: 16px;
+    font-size: 1.6em;
     font-weight: 600;
 }
 
@@ -80,12 +88,39 @@ iframe[id^='twitter-widget-']
 
 .navbar .nav > li
 {
-    line-height: 31px;
+    line-height: 3.1em;
+    min-width: 12.8em;
+}
+
+.navbar .nav > li#NHLdd
+{
+    background-color: #006dcc;
+}
+
+.navbar .nav > li#NFLdd
+{
+    background-color: #5bb75b;
+}
+
+.navbar .nav > li#NBAdd
+{
+    background-color: #faa732;
+}
+
+.navbar .nav > li#MLBdd
+{
+    background-color: #da4f49;
 }
 
 .navbar .nav > li > a 
 {
     padding: 11px 15px;
+    text-align: center;
+}
+
+.navbar .nav > li > .dropdown-menu
+{
+    font-size: 1.4em;
 }
 
 .navbar .nav > li > .dropdown-menu:after
@@ -102,9 +137,24 @@ iframe[id^='twitter-widget-']
     border-bottom: none;
 }
 
-.navbar .nav > li.dropdown.open > a > i
+.navbar .dropdown-menu > li.column-menu ul
 {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0 0 16px;
+    width: 100%;
+}
 
+.navbar .dropdown-menu > li.column-menu li
+{
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.navbar .dropdown-menu > li.column-menu.firstcolumn
+{
+    margin-left: 0;
 }
 
 .dropdown-menu
