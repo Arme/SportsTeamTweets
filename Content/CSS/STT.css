@@ -41,7 +41,7 @@ body
 
 .well.preview-well
 {
-    padding: ;0
+    padding: 0;
 }
 
 .brand-icon
@@ -189,7 +189,7 @@ iframe[id^='twitter-widget-']
 
 .fill
 {
-    padding-bottom: 55px;
+    padding-bottom: 93px;
 }
 
 .container .disclaimer
