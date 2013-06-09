@@ -1,7 +1,19 @@
-﻿body 
+﻿html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    height: 100%;
+}
+
+body 
 {
     font-family: 'Roboto', Helvetica, Arial;
     font-size: 10px;
+    min-height: 100%;
 }
 
 @media (max-width: 979px) 
@@ -29,7 +41,7 @@
 
 .well.preview-well
 {
-    padding: 0;
+    padding: ;0
 }
 
 .brand-icon
@@ -51,12 +63,6 @@
     background-repeat: repeat;
     background-position: left top;
     background-attachment: fixed;
-}
-
-.navbar-bottom,
-.navbar-bottom > .navbar-inner
-{
-    margin-bottom: 0px !important;
 }
 
 .navbar-inner
@@ -179,4 +185,20 @@ iframe[id^='twitter-widget-']
 .dropdown-menu .divider.divider-no-upper
 {
     margin: 0;
+}
+
+.fill
+{
+    padding-bottom: 55px;
+}
+
+.container .disclaimer
+{
+    margin: 2em auto .5em;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 1.6em;
+    line-height: 1.8em;
+    text-align: center;
 }
