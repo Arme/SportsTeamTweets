@@ -14,130 +14,154 @@ namespace SportsTeamTweets.Controllers
             return View(model: GetWidgetId("NBA"));
         }
 
-        //Western Conference
+        public ActionResult ATL()
+        {
+            return View();
+        }
+
+        public ActionResult BKN()
+        {
+            return View();
+        }
+
+        public ActionResult BOS()
+        {
+            return View();
+        }
+
+        public ActionResult CHA()
+        {
+            return View();
+        }
 
         public ActionResult CHI()
         {
-            return View(model: GetWidgetId("CHI"));
+            return View();
         }
-        public ActionResult CBJ()
+
+        public ActionResult CLE()
         {
-            return View(model: GetWidgetId("CBJ"));
+            return View();
         }
-        public ActionResult DET()
-        {
-            return View(model: GetWidgetId("DET"));
-        }
-        public ActionResult NSH()
-        {
-            return View(model: GetWidgetId("NSH"));
-        }
-        public ActionResult STL()
-        {
-            return View(model: GetWidgetId("STL"));
-        }
-        public ActionResult CGY()
-        {
-            return View(model: GetWidgetId("CGY"));
-        }
-        public ActionResult COL()
-        {
-            return View(model: GetWidgetId("COL"));
-        }
-        public ActionResult EDM()
-        {
-            return View(model: GetWidgetId("EDM"));
-        }
-        public ActionResult MIN()
-        {
-            return View(model: GetWidgetId("MIN"));
-        }
-        public ActionResult VAN()
-        {
-            return View(model: GetWidgetId("VAN"));
-        }
-        public ActionResult ANA()
-        {
-            return View(model: GetWidgetId("ANA"));
-        }
+
         public ActionResult DAL()
         {
-            return View(model: GetWidgetId("DAL"));
+            return View();
         }
-        public ActionResult LAK()
-        {
-            return View(model: GetWidgetId("LAK"));
-        }
-        public ActionResult PHX()
-        {
-            return View(model: GetWidgetId("PHX"));
-        }
-        public ActionResult SJS()
-        {
-            return View(model: GetWidgetId("SJS"));
-        }
-        
-        //Eastern Conference
 
-        public ActionResult NJD()
+        public ActionResult DEN()
         {
-            return View(model: GetWidgetId("NJD"));
+            return View();
         }
-        public ActionResult NYI()
+
+        public ActionResult DET()
         {
-            return View(model: GetWidgetId("NYI"));
+            return View();
         }
-        public ActionResult NYR()
+
+        public ActionResult GSW()
         {
-            return View(model: GetWidgetId("NYR"));
+            return View();
         }
+
+        public ActionResult HOU()
+        {
+            return View();
+        }
+
+        public ActionResult IND()
+        {
+            return View();
+        }
+
+        public ActionResult LAC()
+        {
+            return View();
+        }
+
+        public ActionResult LAL()
+        {
+            return View();
+        }
+
+        public ActionResult MEM()
+        {
+            return View();
+        }
+
+        public ActionResult MIA()
+        {
+            return View();
+        }
+
+        public ActionResult MIL()
+        {
+            return View();
+        }
+
+        public ActionResult MIN()
+        {
+            return View();
+        }
+
+        public ActionResult NOP()
+        {
+            return View();
+        }
+
+        public ActionResult NYK()
+        {
+            return View();
+        }
+
+        public ActionResult OKC()
+        {
+            return View();
+        }
+
+        public ActionResult ORL()
+        {
+            return View();
+        }
+
         public ActionResult PHI()
         {
-            return View(model: GetWidgetId("PHI"));
+            return View();
         }
-        public ActionResult PIT()
+
+        public ActionResult PHX()
         {
-            return View(model: GetWidgetId("PIT"));
+            return View();
         }
-        public ActionResult BOS()
+
+        public ActionResult POR()
         {
-            return View(model: GetWidgetId("BOS"));
+            return View();
         }
-        public ActionResult BUF()
+
+        public ActionResult SAC()
         {
-            return View(model: GetWidgetId("BUF"));
+            return View();
         }
-        public ActionResult MTL()
+
+        public ActionResult SAS()
         {
-            return View(model: GetWidgetId("MTL"));
+            return View();
         }
-        public ActionResult OTT()
-        {
-            return View(model: GetWidgetId("OTT"));
-        }
+
         public ActionResult TOR()
         {
-            return View(model: GetWidgetId("TOR"));
+            return View();
         }
-        public ActionResult CAR()
+
+        public ActionResult UTA()
         {
-            return View(model: GetWidgetId("CAR"));
+            return View();
         }
-        public ActionResult FLA()
-        {
-            return View(model: GetWidgetId("FLA"));
-        }
-        public ActionResult TBL()
-        {
-            return View(model: GetWidgetId("TBL"));
-        }
+
         public ActionResult WSH()
         {
-            return View(model: GetWidgetId("WSH"));
-        }
-        public ActionResult WPG()
-        {
-            return View(model: GetWidgetId("WPG"));
+            return View();
         }
 
         public string GetWidgetId(string team)
