@@ -14,130 +14,154 @@ namespace SportsTeamTweets.Controllers
             return View(model: GetWidgetId("MLB"));
         }
 
-        //Western Conference
+        public ActionResult ARI()
+        {
+            return View();
+        }
 
-        public ActionResult CHI()
+        public ActionResult ATL()
         {
-            return View(model: GetWidgetId("CHI"));
+            return View();
         }
-        public ActionResult CBJ()
-        {
-            return View(model: GetWidgetId("CBJ"));
-        }
-        public ActionResult DET()
-        {
-            return View(model: GetWidgetId("DET"));
-        }
-        public ActionResult NSH()
-        {
-            return View(model: GetWidgetId("NSH"));
-        }
-        public ActionResult STL()
-        {
-            return View(model: GetWidgetId("STL"));
-        }
-        public ActionResult CGY()
-        {
-            return View(model: GetWidgetId("CGY"));
-        }
-        public ActionResult COL()
-        {
-            return View(model: GetWidgetId("COL"));
-        }
-        public ActionResult EDM()
-        {
-            return View(model: GetWidgetId("EDM"));
-        }
-        public ActionResult MIN()
-        {
-            return View(model: GetWidgetId("MIN"));
-        }
-        public ActionResult VAN()
-        {
-            return View(model: GetWidgetId("VAN"));
-        }
-        public ActionResult ANA()
-        {
-            return View(model: GetWidgetId("ANA"));
-        }
-        public ActionResult DAL()
-        {
-            return View(model: GetWidgetId("DAL"));
-        }
-        public ActionResult LAK()
-        {
-            return View(model: GetWidgetId("LAK"));
-        }
-        public ActionResult PHX()
-        {
-            return View(model: GetWidgetId("PHX"));
-        }
-        public ActionResult SJS()
-        {
-            return View(model: GetWidgetId("SJS"));
-        }
-        
-        //Eastern Conference
 
-        public ActionResult NJD()
+        public ActionResult BAL()
         {
-            return View(model: GetWidgetId("NJD"));
+            return View();
         }
-        public ActionResult NYI()
-        {
-            return View(model: GetWidgetId("NYI"));
-        }
-        public ActionResult NYR()
-        {
-            return View(model: GetWidgetId("NYR"));
-        }
-        public ActionResult PHI()
-        {
-            return View(model: GetWidgetId("PHI"));
-        }
-        public ActionResult PIT()
-        {
-            return View(model: GetWidgetId("PIT"));
-        }
+
         public ActionResult BOS()
         {
-            return View(model: GetWidgetId("BOS"));
+            return View();
         }
-        public ActionResult BUF()
+
+        public ActionResult CHC()
         {
-            return View(model: GetWidgetId("BUF"));
+            return View();
         }
-        public ActionResult MTL()
+
+        public ActionResult CHW()
         {
-            return View(model: GetWidgetId("MTL"));
+            return View();
         }
-        public ActionResult OTT()
+
+        public ActionResult CIN()
         {
-            return View(model: GetWidgetId("OTT"));
+            return View();
         }
+
+        public ActionResult CLE()
+        {
+            return View();
+        }
+
+        public ActionResult COL()
+        {
+            return View();
+        }
+
+        public ActionResult DET()
+        {
+            return View();
+        }
+
+        public ActionResult HOU()
+        {
+            return View();
+        }
+
+        public ActionResult KCR()
+        {
+            return View();
+        }
+
+        public ActionResult LAA()
+        {
+            return View();
+        }
+
+        public ActionResult LAD()
+        {
+            return View();
+        }
+
+        public ActionResult MIA()
+        {
+            return View();
+        }
+
+        public ActionResult MIL()
+        {
+            return View();
+        }
+
+        public ActionResult MIN()
+        {
+            return View();
+        }
+
+        public ActionResult NYM()
+        {
+            return View();
+        }
+
+        public ActionResult NYY()
+        {
+            return View();
+        }
+
+        public ActionResult OAK()
+        {
+            return View();
+        }
+
+        public ActionResult PHI()
+        {
+            return View();
+        }
+
+        public ActionResult PIT()
+        {
+            return View();
+        }
+
+        public ActionResult SDP()
+        {
+            return View();
+        }
+
+        public ActionResult SEA()
+        {
+            return View();
+        }
+
+        public ActionResult SFG()
+        {
+            return View();
+        }
+
+        public ActionResult STL()
+        {
+            return View();
+        }
+
+        public ActionResult TBR()
+        {
+            return View();
+        }
+
+        public ActionResult TEX()
+        {
+            return View();
+        }
+
         public ActionResult TOR()
         {
-            return View(model: GetWidgetId("TOR"));
+            return View();
         }
-        public ActionResult CAR()
-        {
-            return View(model: GetWidgetId("CAR"));
-        }
-        public ActionResult FLA()
-        {
-            return View(model: GetWidgetId("FLA"));
-        }
-        public ActionResult TBL()
-        {
-            return View(model: GetWidgetId("TBL"));
-        }
+
         public ActionResult WSH()
         {
-            return View(model: GetWidgetId("WSH"));
-        }
-        public ActionResult WPG()
-        {
-            return View(model: GetWidgetId("WPG"));
+            return View();
         }
 
         public string GetWidgetId(string team)
