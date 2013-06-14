@@ -29,7 +29,7 @@
                         NFL
                         <i class="icon-angle-down"></i>
                     </a>
-                    <ul class="dropdown-menu span6">
+                    <ul class="dropdown-menu">
                         @{ Html.RenderAction("HomeSubMenu", "Nav", new { league = "NFL" }); }
                     </ul>
                 </li>
@@ -73,13 +73,13 @@
                 case 'NHLdd':
                     if ($('ul.nav li#NHLdd').data('open')) {
                         $('ul.nav li#NHLdd').data('open', false);
-                        $('img#NHLglyph', this).attr('src', '/Content/Images/NHL/nhlglyph.png');
+                        $('ul.nav li#NHLdd img#NHLglyph').attr('src', '/Content/Images/NHL/nhlglyph.png');
                     } else {
                         $('ul.nav li#NHLdd').data('open', true);
                         $('ul.nav li#NFLdd').data('open', false);
                         $('ul.nav li#NBAdd').data('open', false);
                         $('ul.nav li#MLBdd').data('open', false);
-                        $('img#NHLglyph', this).attr('src', '/Content/Images/NHL/nhlglyph_gs.png');
+                        $('ul.nav li#NHLdd img#NHLglyph').attr('src', '/Content/Images/NHL/nhlglyph_gs.png');
                         $('ul.nav li#NFLdd img#NFLglyph').attr('src', '/Content/Images/NFL/nflglyph.png');
                         $('ul.nav li#NBAdd img#NBAglyph').attr('src', '/Content/Images/NBA/nbaglyph.png');
                         $('ul.nav li#MLBdd img#MLBglyph').attr('src', '/Content/Images/MLB/mlbglyph.png');
@@ -88,14 +88,14 @@
                 case 'NFLdd':
                     if ($('ul.nav li#NFLdd').data('open')) {
                         $('ul.nav li#NFLdd').data('open', false);
-                        $('img#NFLglyph', this).attr('src', '/Content/Images/NFL/nflglyph.png');
+                        $('ul.nav li#NFLdd img#NFLglyph').attr('src', '/Content/Images/NFL/nflglyph.png');
                     } else {
                         $('ul.nav li#NHLdd').data('open', false);
                         $('ul.nav li#NFLdd').data('open', true);
                         $('ul.nav li#NBAdd').data('open', false);
                         $('ul.nav li#MLBdd').data('open', false);
                         $('ul.nav li#NHLdd img#NHLglyph').attr('src', '/Content/Images/NHL/nhlglyph.png');
-                        $('img#NFLglyph', this).attr('src', '/Content/Images/NFL/nflglyph_gs.png');
+                        $('ul.nav li#NFLdd img#NFLglyph').attr('src', '/Content/Images/NFL/nflglyph_gs.png');
                         $('ul.nav li#NBAdd img#NBAglyph').attr('src', '/Content/Images/NBA/nbaglyph.png');
                         $('ul.nav li#MLBdd img#MLBglyph').attr('src', '/Content/Images/MLB/mlbglyph.png');
                     }
@@ -103,7 +103,7 @@
                 case 'NBAdd':
                     if ($('ul.nav li#NBAdd').data('open')) {
                         $('ul.nav li#NBAdd').data('open', false);
-                        $('img#NBAglyph', this).attr('src', '/Content/Images/NBA/nbaglyph.png');
+                        $('ul.nav li#NBAdd img#NBAglyph').attr('src', '/Content/Images/NBA/nbaglyph.png');
                     } else {
                         $('ul.nav li#NHLdd').data('open', false);
                         $('ul.nav li#NFLdd').data('open', false);
@@ -111,14 +111,14 @@
                         $('ul.nav li#MLBdd').data('open', false);
                         $('ul.nav li#NHLdd img#NHLglyph').attr('src', '/Content/Images/NHL/nhlglyph.png');
                         $('ul.nav li#NFLdd img#NFLglyph').attr('src', '/Content/Images/NFL/nflglyph.png');
-                        $('img#NBAglyph', this).attr('src', '/Content/Images/NBA/nbaglyph_gs.png');
+                        $('ul.nav li#NBAdd img#NBAglyph').attr('src', '/Content/Images/NBA/nbaglyph_gs.png');
                         $('ul.nav li#MLBdd img#MLBglyph').attr('src', '/Content/Images/MLB/mlbglyph.png');
                     }
                     break;
                 case 'MLBdd':
                     if ($('ul.nav li#MLBdd').data('open')) {
                         $('ul.nav li#MLBdd').data('open', false);
-                        $('img#MLBglyph', this).attr('src', '/Content/Images/MLB/mlbglyph.png');
+                        $('ul.nav li#MLBdd img#MLBglyph').attr('src', '/Content/Images/MLB/mlbglyph.png');
                     } else {
                         $('ul.nav li#NHLdd').data('open', false);
                         $('ul.nav li#NFLdd').data('open', false);
@@ -127,7 +127,7 @@
                         $('ul.nav li#NHLdd img#NHLglyph').attr('src', '/Content/Images/NHL/nhlglyph.png');
                         $('ul.nav li#NFLdd img#NFLglyph').attr('src', '/Content/Images/NFL/nflglyph.png');
                         $('ul.nav li#NBAdd img#NBAglyph').attr('src', '/Content/Images/NBA/nbaglyph.png');
-                        $('img#MLBglyph', this).attr('src', '/Content/Images/MLB/mlbglyph_gs.png');
+                        $('ul.nav li#MLBdd img#MLBglyph').attr('src', '/Content/Images/MLB/mlbglyph_gs.png');
                     }
                     break;
             }
